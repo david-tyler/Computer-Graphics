@@ -1,0 +1,57 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "1bf28bc8ba42438e0644b9d0fb548481d5e1cbf4308aaf891ed9f637232700cd"
+    }
+  ],
+  "containerPath" : "/Users/david-tylerighedosa/Documents/CSCE441/Assignments/A2/build/A2.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData/A2-agkeodexnpscjcaovexctgetremg/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData/A2-agkeodexnpscjcaovexctgetremg/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

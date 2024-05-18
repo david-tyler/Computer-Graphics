@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'L01' in project 'L01'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L01'
+Target 'ZERO_CHECK' in project 'L01' (no dependencies)

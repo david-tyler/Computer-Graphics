@@ -1,0 +1,3 @@
+- David-Tyler Ighedosa 231008755 ighedosadt@tamu.edu
+- Completed all tasks up to task 6 but did not do the bonus with the sphere.
+- When pressing period or comma to move through the higherarchy I start my indexing at -1 so when you first run the project nothing will be changing size like in task 4. Simply press period or comma to start the process and traverse then you will see the size of the selected component oscillating.

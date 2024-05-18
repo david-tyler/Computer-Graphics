@@ -1,0 +1,3 @@
+/Users/david-tylerighedosa/Documents/CSCE441/Assignments/A1/src/CMakeFiles/A1.dir
+/Users/david-tylerighedosa/Documents/CSCE441/Assignments/A1/src/CMakeFiles/edit_cache.dir
+/Users/david-tylerighedosa/Documents/CSCE441/Assignments/A1/src/CMakeFiles/rebuild_cache.dir

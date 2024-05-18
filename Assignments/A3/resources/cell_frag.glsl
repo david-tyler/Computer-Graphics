@@ -1,0 +1,105 @@
+#version 120
+
+uniform vec3 lightPos; // in camera coordinates
+
+uniform vec3 light1position;
+uniform vec3 light1color;
+
+uniform vec3 light2position;
+uniform vec3 light2color;
+
+uniform vec3 ka;
+uniform vec3 kd;
+uniform vec3 ks;
+uniform float s;
+
+
+varying vec3 fragPos; // passed from the vertex shader
+varying vec3 normalCam; // passed from the vertex shader
+
+
+
+void main()
+{
+    vec3 n = normalize(normalCam);
+    
+    vec3 viewDirCam = normalize(-fragPos);
+    
+    float dotProduct = abs(dot(n, viewDirCam));
+    
+    if (dotProduct < 0.3) {
+        gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0); // Black color for silhouette
+    } else 
+    {
+        vec3 ca = ka; // Compute diffuse color
+        
+        
+        // work with lights
+        vec3 result = vec3(0.0f, 0.0f, 0.0f);
+        
+        // first light
+        vec3 lightDirCam = normalize(light1position - fragPos); // Calculate light direction in camera space
+        float diffuse = max(0.0, dot(lightDirCam, n)); // Compute diffuse component
+        vec3 cd = kd * diffuse; // Compute diffuse color
+        
+        vec3 h = normalize(lightDirCam + viewDirCam);
+        float specular = pow(max(0.0, dot(h, n)), s); // Compute specular component
+        vec3 cs = ks * specular; // Compute specular color
+        
+        // R
+        result += light1color*(ca + cd + cs);
+        
+        
+        // second light
+        lightDirCam = normalize(light2position - fragPos); // Calculate light direction in camera space
+        diffuse = max(0.0, dot(lightDirCam, n)); // Compute diffuse component
+        cd = kd * diffuse; // Compute diffuse color
+        
+        h = normalize(lightDirCam + viewDirCam);
+        specular = pow(max(0.0, dot(h, n)), s); // Compute specular component
+        cs = ks * specular; // Compute specular color
+        result += (light2color*(ca + cd + cs));
+        
+        if(result.r < 0.25) {
+            result.r = 0.0;
+        } else if(result.r < 0.5) {
+            result.r = 0.25;
+        } else if(result.r < 0.75) {
+            result.r = 0.5;
+        } else if(result.r < 1.0) {
+            result.r = 0.75;
+        } else {
+            result.r = 1.0;
+        }
+        
+        if(result.g < 0.25) {
+            result.g = 0.0;
+        } else if(result.g < 0.5) {
+            result.g = 0.25;
+        } else if(result.g < 0.75) {
+            result.g = 0.5;
+        } else if(result.g < 1.0) {
+            result.g = 0.75;
+        } else {
+            result.g = 1.0;
+        }
+        
+        if(result.b < 0.25) {
+            result.b = 0.0;
+        } else if(result.b < 0.5) {
+            result.b = 0.25;
+        } else if(result.b < 0.75) {
+            result.b = 0.5;
+        } else if(result.b < 1.0) {
+            result.b = 0.75;
+        } else {
+            result.b = 1.0;
+        }
+        
+        gl_FragColor = vec4(result, 1.0);
+    }
+    
+}
+
+
+

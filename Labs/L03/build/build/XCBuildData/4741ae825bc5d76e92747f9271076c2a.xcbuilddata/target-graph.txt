@@ -1,0 +1,16 @@
+Target dependency graph (7 targets)
+Target 'update_mappings' in project 'L03'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L03'
+Target 'uninstall' in project 'L03' (no dependencies)
+Target 'install' in project 'L03'
+➜ Explicit dependency on target 'ALL_BUILD' in project 'L03'
+Target 'ALL_BUILD' in project 'L03'
+➜ Explicit dependency on target 'L03' in project 'L03'
+➜ Explicit dependency on target 'glfw' in project 'L03'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L03'
+Target 'L03' in project 'L03'
+➜ Explicit dependency on target 'glfw' in project 'L03'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L03'
+Target 'glfw' in project 'L03'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L03'
+Target 'ZERO_CHECK' in project 'L03' (no dependencies)

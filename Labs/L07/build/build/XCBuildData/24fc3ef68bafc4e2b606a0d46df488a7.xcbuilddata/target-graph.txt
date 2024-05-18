@@ -1,0 +1,11 @@
+Target dependency graph (4 targets)
+Target 'ALL_BUILD' in project 'L07'
+➜ Explicit dependency on target 'L07' in project 'L07'
+➜ Explicit dependency on target 'glfw' in project 'L07'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L07'
+Target 'L07' in project 'L07'
+➜ Explicit dependency on target 'glfw' in project 'L07'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L07'
+Target 'glfw' in project 'L07'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'L07'
+Target 'ZERO_CHECK' in project 'L07' (no dependencies)

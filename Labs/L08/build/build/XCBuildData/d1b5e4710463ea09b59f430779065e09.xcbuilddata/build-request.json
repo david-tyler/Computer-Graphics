@@ -1,0 +1,75 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd59b7d46e1f10927d6751e7852220f807eb"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd59ae3e5200caefeb7db82fae0ff8dc3b44"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd591b532e765a71983ef75d6dac504d3e2d"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd59e867782f70d0b09f7eaee1f49f6e4de8"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd592b6e570ea1742863b6846ed6d4605863"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd59c394bec2712ddcb99e6947858b7f5fb9"
+    },
+    {
+      "guid" : "ecc78bce377bc18bf27b0a3b5027bd59ed3e559a29b753ef0be76c195dda437a"
+    }
+  ],
+  "containerPath" : "/Users/david-tylerighedosa/Documents/CSCE441/Labs/L08/build/L08.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData/L08-hakujnxnbnqaplfztkthmjenymul/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/david-tylerighedosa/Library/Developer/Xcode/DerivedData/L08-hakujnxnbnqaplfztkthmjenymul/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

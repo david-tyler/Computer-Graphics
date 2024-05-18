@@ -1,0 +1,12 @@
+Target dependency graph (5 targets)
+Target 'install' in project 'A7'
+➜ Explicit dependency on target 'ALL_BUILD' in project 'A7'
+Target 'ALL_BUILD' in project 'A7'
+➜ Explicit dependency on target 'A7' in project 'A7'
+➜ Explicit dependency on target 'glfw' in project 'A7'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'A7'
+Target 'A7' in project 'A7'
+➜ Explicit dependency on target 'glfw' in project 'A7'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'A7'
+Target 'ZERO_CHECK' in project 'A7' (no dependencies)
+Target 'glfw' in project 'A7' (no dependencies)
